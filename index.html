@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP CLUSTER</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- GRAFICOS -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js" integrity="sha256-wlnOm07jUmQpocWl3PtIevHHdkXAhimBiF4XDoFth6c=" crossorigin="anonymous"></script>
+
+<script src="echarts.min.js"></script>
+
+</head>
+<body>
+    
+    <div id="titulo">
+         <h2> MEU APP </h3>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <ul class="navbar">
+            <span><li><a style="color: yellow;" href="#home"> Home </a></li></span>
+            <li><a href="#menu1"> Menu Item 1 </a></li>
+            <li><a href="#menu2"> Menu Item 2 </a></li>
+            <li><a href="#menu3"> Menu Item 3 </a></li>
+        </ul>
+    </header>
+
+    <!-- IMG -->
+    <section id="seçao">
+
+        <div id="texto">
+            <h2> Lorem Ipsum </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore inventore<br> architecto accusamus quas officia deleniti saepe nulla, eaque animi dolor totam dolorum?<br>
+                Earum, distinctio ipsum! Assumenda facilis eos consequuntur.
+            </p>
+        </div>
+        
+
+    </section>
+
+    <div id="main" style="width:600px; height:400px;"></div>
+
+    <script type="text/javascript">
+        
+        var chartDom = document.getElementById('main');
+        var myChart = echarts.init(chartDom);
+        var option;
+
+    option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+        data: [800, 910, 900, 910, 1220, 1240, 1230],
+        type: 'line',
+        color: 'red'
+        }
+    ],
+    backgroundColor: '#dddddd'
+    };
+
+option && myChart.setOption(option);
+
+setOption({
+    backgroundColor: 'red'
+})
+
+    </script>
+
+</body>
+</html>

@@ -25,15 +25,25 @@
     </div>
 
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <ul class="navbar">
-            <span><li><a style="color: yellow;" href="#home"> Home </a></li></span>
-            <li><a href="#menu1"> Menu Item 1 </a></li>
-            <li><a href="#menu2"> Menu Item 2 </a></li>
-            <li><a href="#menu3"> Menu Item 3 </a></li>
-            <li><img style="width: 17px;" src="./imgs/menu.png"></img></li>
+            <li><a style="color: yellow;" href="#home"> Home </a></li>
+            <li class="listaMenus"><a href="#menu1"> Menu Item 1 </a></li>
+            <li class="listaMenus"><a href="#menu2"> Menu Item 2 </a></li>
+            <li class="listaMenus"><a href="#menu3"> Menu Item 3 </a></li>
         </ul>
+
+        <img onclick="mostraMenu()" src="./imgs/menu.png" alt="">                
+
     </header>
+
+    <section id="nav">
+        <ul id="navbarBtn" class="navbarBtn">
+            <li id="menu4" class="listaMenus1"><a href="#menu1"> Menu Item 1 </a></li>
+            <li id="menu5" class="listaMenus1"><a href="#menu2"> Menu Item 2 </a></li>
+            <li id="menu6" class="listaMenus1"><a href="#menu3"> Menu Item 3 </a></li>
+        </ul>
+    </section>
 
     <!-- IMG -->
     <section id="seçao">
@@ -85,7 +95,7 @@ setOption({
 
     </script>
 
-        <div id="card" style="width:48vw; height:35vh;">
+        <div id="card">
             <div id="textos">
 
                 <div>
@@ -102,6 +112,9 @@ setOption({
         </div>
 
     </div>
+
+    <!-- JS -->
+    <script src="./scripts/js/script.js"></script>
 
 </body>
 </html>

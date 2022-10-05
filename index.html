@@ -12,7 +12,10 @@
     <!-- GRAFICOS -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js" integrity="sha256-wlnOm07jUmQpocWl3PtIevHHdkXAhimBiF4XDoFth6c=" crossorigin="anonymous"></script>
 
-<script src="echarts.min.js"></script>
+    <script src="echarts.min.js"></script>
+
+    <!-- ICONES -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -28,6 +31,7 @@
             <li><a href="#menu1"> Menu Item 1 </a></li>
             <li><a href="#menu2"> Menu Item 2 </a></li>
             <li><a href="#menu3"> Menu Item 3 </a></li>
+            <li><img style="width: 17px;" src="./imgs/menu.png"></img></li>
         </ul>
     </header>
 
@@ -37,15 +41,17 @@
         <div id="texto">
             <h2> Lorem Ipsum </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore inventore<br> architecto accusamus quas officia deleniti saepe nulla, eaque animi dolor totam dolorum?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                 Repudiandae dolore inventore architecto accusamus quas<br>
+                officia deleniti saepe nulla, eaque animi dolor totam dolorum?<br>
                 Earum, distinctio ipsum! Assumenda facilis eos consequuntur.
             </p>
         </div>
-        
 
     </section>
 
-    <div id="main" style="width:600px; height:400px;"></div>
+    <div id="tabelas">
+    <div id="main" style="width:48vw; height:35vh;"></div>
 
     <script type="text/javascript">
         
@@ -78,6 +84,24 @@ setOption({
 })
 
     </script>
+
+        <div id="card" style="width:48vw; height:35vh;">
+            <div id="textos">
+
+                <div>
+                    <p> Vendas em 2020 </p>
+                    <p class="texto-card"><b>R$ 412,1</b> Milhões</p>
+                </div>
+                <div>
+                    <p> Vendas em 2019 </p>
+                    <p class="texto-card"><b>R$ 356,6</b> Milhões</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
 
 </body>
 </html>

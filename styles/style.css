@@ -62,6 +62,7 @@ section > div#texto {
     color: white;
     align-self: flex-end;
     padding: 50px;
+    overflow: hidden;
 }
 
 section > div#texto h2 {
@@ -73,4 +74,194 @@ section > div#texto h2 {
 section > div#texto p {
     font-weight: 200;
     font-size: 16px;
+}
+
+/* TABELAS */
+div#tabelas {
+    display: flex;
+    width: 100%;
+}
+
+div#main {
+    margin-right: 1vw;
+}
+
+div#card {
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}   
+
+.texto-card {
+    color: #e72a34;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 225px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 2%;
+        font-size: 5px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+        font-size: 3px;
+    }
+}
+
+@media (min-width: 226px) and (max-width: 322px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 5%;
+        font-size: 7px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 323px) and (max-width: 434px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 2%;
+        font-size: 10px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 435px) and (max-width: 500px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 6%;
+        font-size: 12px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 10%;
+        font-size: 12px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 10%;
+        font-size: 16px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 3%;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+    section#seçao
+     {
+        display: flex;
+        height: 30vh;
+        margin-right: none;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 25vh;
+        padding: 30px 0 20px 30px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 10%;                
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+    }
+}
+
+@media (min-width: 851px) {
+    section > div#texto > p
+     {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+    section > div#texto > h2
+     {
+        font-size: 20px;
+
+    }
 }

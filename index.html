@@ -60,13 +60,17 @@
 
     </section>
 
+    <!-- GRÁFICO -->
     <div id="tabelas">
-    <div id="main" style="width:48vw; height:35vh;"></div>
+    <div id="main" style="height:35vh;"></div>
 
     <script type="text/javascript">
         
         var chartDom = document.getElementById('main');
         var myChart = echarts.init(chartDom);
+        window.onresize = function() {
+        myChart.resize();
+        }
         var option;
 
     option = {
@@ -96,7 +100,7 @@ setOption({
     </script>
 
         <div id="card">
-            <div id="textos">
+            <div id="textosCard">
 
                 <div>
                     <p> Vendas em 2020 </p>

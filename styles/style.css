@@ -110,31 +110,49 @@ section > div#texto p {
 div#tabelas {
     display: flex;
     width: 100%;
-    float: left;
 }
 
 div#main {
+    width: 50vw;
     margin-right: 1vw;
 }
 
+/* CARD */
 div#card {
     background: #dddddd;
     align-items: center;
     display: flex;
     padding-left: 50px;
-    width: 48vw;
-    float: left;
+    width: 50vw;
+}
+
+div#textosCard {
+    padding-top: 20px;
 }
 
 p.texto-card {
     color: #e72a34;
     font-size: 2.5em;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 /* RESPONSIVO */
 @media (max-width: 225px) {
+    div#titulo {
+        padding: 2px 12px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    header {
+        margin-bottom: 14px;
+    }
+    header ul {
+        padding: 4px 24px;
+    }
+    header ul {
+        padding: 3px 20px;
+    }
     header img {
         display: inherit;
     }
@@ -142,17 +160,17 @@ p.texto-card {
     header ul li.listaMenus {
         display: none;
     }
-
     section#seçao
      {
         display: flex;
-        height: 30vh;
+        height: 6vh;
         margin-right: none;
+        margin-bottom: 5px;
     }
     section#seçao > div#texto {
         align-items: center;
-        height: 25vh;
-        padding: 30px 0 20px 30px;
+        height: 3vh;
+        padding: 10px 0 15px 10px;
     }
     section#seçao > div#texto > h2 {
         margin-top: 2%;
@@ -162,18 +180,44 @@ p.texto-card {
         margin-top: 2%;
         font-size: 3px;
     }
+    div#tabelas {
+        display: block;
+    }
     div#card {
-        margin-top: 250px;
+        margin-top: 2%;
         padding-left: 30px;
-    }   
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }
+    div#textosCard > div > p {
+        font-size: 8px;
+    }      
     p.texto-card {
         font-size: 0.4em;
         float: left;
-        
     }
 }
 
 @media (min-width: 226px) and (max-width: 322px) {
+    div#titulo {
+        padding: 6px 16px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    header {
+        margin-bottom: 16px;
+    }
+    header ul {
+        padding: 4px 14px;
+    }
+    header ul {
+        padding: 5px 23px;
+    }
     header img {
         display: inherit;
     }
@@ -181,42 +225,64 @@ p.texto-card {
     header ul li.listaMenus {
         display: none;
     }
-
     section#seçao
      {
         display: flex;
-        height: 30vh;
+        height: 8vh;
         margin-right: none;
+        margin-bottom: 5px;
     }
     section#seçao > div#texto {
         align-items: center;
-        height: 25vh;
-        padding: 30px 0 20px 30px;
+        height: 3vh;
+        padding: 10px 0 30px 10px;
     }
     section#seçao > div#texto > h2 {
         margin-top: 5%;
-        font-size: 7px;
+        font-size: 6px;
     }
     section#seçao > div#texto > p {
         margin-top: 2%;
-        font-size: 5px;
+        font-size: 4px;
+    }
+    div#tabelas {
+        display: block;
     }
     div#card {
-        margin-top: 250px;
+        margin-top: 2%;
         padding-left: 30px;
-    }   
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }      
     p.texto-card {
         font-size: 0.6em;
         float: left;
-        
     }
 }
 
 @media (min-width: 323px) and (max-width: 434px) {
+    div#titulo {
+        padding: 8px 18px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    header {
+        margin-bottom: 18px;
+    }
+    header ul {
+        padding: 4px 18px;
+    }
+    header ul {
+        padding: 6px 25px;
+    }
     header img {
         display: inherit;
     }
-
     header ul li.listaMenus {
         display: none;
     }
@@ -224,65 +290,98 @@ p.texto-card {
     section#seçao
      {
         display: flex;
-        height: 30vh;
+        height: 10vh;
         margin-right: none;
+        margin-bottom: 5px;
     }
     section#seçao > div#texto {
         align-items: center;
-        height: 25vh;
-        padding: 30px 0 20px 30px;
+        height: 3vh;
+        padding: 10px 0 40px 15px;
     }
     section#seçao > div#texto > h2 {
         margin-top: 2%;
+        font-size: 8px;
+    }
+    section#seçao > div#texto > p {
+        margin-top: 2%;
+        font-size: 6px;
+    }
+    div#tabelas {
+        display: block;
+    }
+    div#card {
+        margin-top: 2%;
+        padding-left: 30px;
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }      
+    p.texto-card {
+        font-size: 0.8em;
+        float: left;
+    }
+}
+
+@media (min-width: 435px) and (max-width: 479px) {
+    div#titulo {
+        padding: 10px 20px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    header ul {
+        padding: 6px 26px;
+    }
+    header ul {
+        padding: 7px 26px;
+    }
+    header img {
+        display: inherit;
+    }
+
+    header ul li.listaMenus {
+        display: none;
+    }
+    section#seçao
+     {
+        display: flex;
+        height: 12vh;
+        margin-right: none;
+        margin-bottom: 5px;
+    }
+    section#seçao > div#texto {
+        align-items: center;
+        height: 5vh;
+        padding: 10px 0 50px 20px;
+    }
+    section#seçao > div#texto > h2 {
+        margin-top: 6%;
         font-size: 10px;
     }
     section#seçao > div#texto > p {
         margin-top: 2%;
         font-size: 8px;
     }
+    div#tabelas {
+        display: block;
+    }
     div#card {
-        margin-top: 250px;
-        padding-left: 30px;
-    }   
-    p.texto-card {
-        font-size: 0.8em;
-        float: left;
-        
-    }
-}
-
-@media (min-width: 435px) and (max-width: 479px) {
-    header img {
-        display: inherit;
-    }
-
-    header ul li.listaMenus {
-        display: none;
-    }
-
-    section#seçao
-     {
-        display: flex;
-        height: 30vh;
-        margin-right: none;
-    }
-    section#seçao > div#texto {
-        align-items: center;
-        height: 25vh;
-        padding: 30px 0 20px 30px;
-    }
-    section#seçao > div#texto > h2 {
-        margin-top: 6%;
-        font-size: 12px;
-    }
-    section#seçao > div#texto > p {
         margin-top: 2%;
-        font-size: 10px;
-    }
-    div#card {
-        margin-top: 250px;
         padding-left: 30px;
-    }   
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }      
     p.texto-card {
         font-size: 1em;
         float: left;
@@ -290,17 +389,33 @@ p.texto-card {
     }
 }
 
-@media (min-width: 480px) and (max-width: 500px) { 
+@media (min-width: 480px) and (max-width: 500px) {
+    div#titulo {
+        padding: 12px 22px;
+    } 
+    h2 {
+        font-size: 18px;
+    }
+    header {
+        margin-bottom: 22px;
+    }
+    header ul {
+        padding: 8px 28px;
+    }
+    section ul li.listaMenus1 {
+        padding: 10px 30px;
+    }
     section#seçao
      {
         display: flex;
-        height: 30vh;
+        height: 15vh;
         margin-right: none;
+        margin-bottom: 5px;
     }
     section#seçao > div#texto {
         align-items: center;
-        height: 25vh;
-        padding: 30px 0 20px 30px;
+        height: 5vh;
+        padding: 10px 10px 65px 30px;
     }
     section#seçao > div#texto > h2 {
         margin-top: 6%;
@@ -310,10 +425,19 @@ p.texto-card {
         margin-top: 2%;
         font-size: 10px;
     }
+    div#tabelas {
+        display: block;
+    }
     div#card {
-        margin-top: 250px;
+        margin-top: 2%;
         padding-left: 30px;
-    }   
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }      
     p.texto-card {
         font-size: 1.2em;
         float: left;
@@ -322,15 +446,25 @@ p.texto-card {
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
+    div#titulo {
+        padding: 14px 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    header {
+        margin-bottom: 24px;
+    }
     section#seçao
      {
         display: flex;
-        height: 30vh;
+        height: 20vh;
         margin-right: none;
+        margin-bottom: 6px;
     }
     section#seçao > div#texto {
         align-items: center;
-        height: 25vh;
+        height: 15vh;
         padding: 30px 0 20px 30px;
     }
     section#seçao > div#texto > h2 {
@@ -341,10 +475,19 @@ p.texto-card {
         margin-top: 2%;
         font-size: 10px;
     }
+    div#tabelas {
+        display: block;
+    }
     div#card {
-        margin-top: 250px;
+        margin-top: 2%;
         padding-left: 30px;
-    }   
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }      
     p.texto-card {
         font-size: 1.4em;
         float: left;
@@ -353,15 +496,25 @@ p.texto-card {
 }
 
 @media (min-width: 601px) and (max-width: 700px) {
+    div#titulo {
+        padding: 16px 26px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    header {
+        margin-bottom: 26px;
+    }
     section#seçao
      {
         display: flex;
-        height: 30vh;
+        height: 25vh;
         margin-right: none;
+        margin-bottom: 7px;
     }
     section#seçao > div#texto {
         align-items: center;
-        height: 25vh;
+        height: 20vh;
         padding: 30px 0 20px 30px;
     }
     section#seçao > div#texto > h2 {
@@ -372,10 +525,19 @@ p.texto-card {
         margin-top: 3%;
         font-size: 12px;
     }
+    div#tabelas {
+        display: block;
+    }
     div#card {
-        margin-top: 250px;
+        margin-top: 2%;
         padding-left: 30px;
-    }   
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
+    }      
     p.texto-card {
         font-size: 1.6em;
         float: left;
@@ -384,11 +546,21 @@ p.texto-card {
 }
 
 @media (min-width: 701px) and (max-width: 850px) {
+    div#titulo {
+        padding: 18px 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    header {
+        margin-bottom: 28px;
+    }
     section#seçao
      {
         display: flex;
         height: 30vh;
         margin-right: none;
+        margin-bottom: 8px;
     }
     section#seçao > div#texto {
         align-items: center;
@@ -403,18 +575,47 @@ p.texto-card {
         margin-top: 2%;
         font-size: 14px;
     }
+    div#tabelas {
+        display: block;
+    }
     div#card {
-        margin-top: 250px;
+        margin-top: 2%;
         padding-left: 30px;
+        margin-right: 0;
+        width: auto;
+    }
+    div#main {
+        margin-right: 0;
+        width: 100vw;
     }   
     p.texto-card {
         font-size: 1.8em;
-        float: left;
-        
     }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 851px) and (max-width: 1036px){
+    section#seçao > div#texto {
+        align-items: center;
+        height: 4vh;
+        padding: 0 0 200px 50px;
+    }
+    section > div#texto > p
+     {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+    section > div#texto > h2
+     {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1037px) and (max-width: 1200px){
+    section#seçao > div#texto {
+        align-items: center;
+        height: 4vh;
+        padding: 0 0 200px 50px;
+    }
     section > div#texto > p
      {
         font-size: 14px;
